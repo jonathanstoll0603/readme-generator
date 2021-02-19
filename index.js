@@ -1,13 +1,13 @@
-const fs = require("fs");
-const inquirer = require("inquirer");
+const fs = require("fs"); //fs import
+const inquirer = require("inquirer"); //Inquirer import
 const { prompt } = require("inquirer");
-const util = require("util");
-const writeFileAsync = util.promisify(fs.writeFile);
-const generateMarkdown = require("./utils/generateMarkdown");
-console.log(generateMarkdown)
+const util = require("util"); //Util import for writeFileAsync
+const writeFileAsync = util.promisify(fs.writeFile); // For async function
+const generateMarkdown = require("./utils/generateMarkdown"); //Import from generateMarkdown file
 
-// TODO: Create a function to write README file
+// Function that initiates upon node being run
 function init() {
+    // Function that calls inquirer.prompt, and prompts user with info below
     const promptUser = () => {
         return inquirer.prompt([
             {
@@ -63,9 +63,12 @@ function init() {
         ])
     }
 
+    // after user completes inquirer prompt..
     promptUser().then((response) => {
+        // variable that takes generateMarkdown functions, and adds in inquirer responses
         const readmeTemplate = generateMarkdown(response)
     
+        // (Create a md file called READMEexample, fill the file with generateMarkdown)
         writeFileAsync("READMEexample.md", readmeTemplate)
         .then(() => {
             console.log("Generating README....")
