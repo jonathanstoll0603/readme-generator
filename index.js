@@ -75,13 +75,5 @@ function init() {
     })
 }
 
-// const generateMarkdown = ({ github, email, projectName, description, license, install, test, use, contribution}) => {
-//     return ` 
-//     #${projectName}
-
-    
-//     `
-// }
-
 // Function call to initialize app
 init();
