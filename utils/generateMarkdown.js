@@ -72,7 +72,7 @@ ${description}
     
 * [License](#license)
     
-* [Contribution](#contribution)
+* [Contribution](#contributions)
     
 * [Tests](#tests)
     
@@ -83,7 +83,7 @@ ${description}
 ## Installation
 
 To install the necessary dependancies run the following command:
-    
+
 \`\`\`\
 
 ${install}
@@ -109,7 +109,7 @@ ${contribution}
 ## Tests
     
 To run tests, run the following command:
-    
+
 \`\`\`\
 
 ${test}
