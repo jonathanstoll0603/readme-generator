@@ -1,7 +1,7 @@
 // Function that renders the license badge of selected inquirer prompt
 const renderLicenseBadge = (license) => {
     // If there is no license, return an empty string
-    if (license == "none") {
+    if (license == "None") {
         return "";
     // Else return license badge that was selected during the inquirer prompt
     } else if (license == "MIT") {
@@ -18,7 +18,7 @@ const renderLicenseBadge = (license) => {
 // Function that renders clickable license link
 const renderLicenseLink = (license) => {
     // If there is no license, return an empty string
-    if (license == "none") {
+    if (license == "None") {
         return "";
     // Else return the license link that was selected in inquirer prompt
     } else if (license == "MIT") {
@@ -35,7 +35,7 @@ const renderLicenseLink = (license) => {
 // Function that will render a license seciton to the readme
 function renderLicenseSection(license) {
     // If there is no license, return an empty string
-    if (license == "none") {
+    if (license == "None") {
         return ""
     // Else return license section
     } else {
